@@ -6,28 +6,28 @@ const projects = [
     location: "Taj Falaknuma",
     guests: 450,
     theme: "Royal Gold",
-    image: "/images/gallery-1.svg"
+    image: "/images/wedding-1.png"
   },
   {
     title: "Destination Palace Wedding",
     location: "Udaipur",
     guests: 380,
     theme: "Champagne Majesty",
-    image: "/images/gallery-2.svg"
+    image: "/images/wedding-2.png"
   },
   {
     title: "Luxury Indoor Reception",
     location: "Hyderabad",
     guests: 300,
     theme: "Ivory Crystal",
-    image: "/images/gallery-3.svg"
+    image: "/images/wedding-3.png"
   },
   {
     title: "Beach Wedding Weekend",
     location: "Goa",
     guests: 230,
     theme: "Sunset Sand",
-    image: "/images/gallery-4.svg"
+    image: "/images/wedding-2.png"
   }
 ];
 
