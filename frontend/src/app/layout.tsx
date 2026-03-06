@@ -6,7 +6,12 @@ import { Footer } from "@/components/footer";
 import { siteConfig } from "@/lib/site";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 
-const serif = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-serif" });
+const serif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  variable: "--font-serif"
+});
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
