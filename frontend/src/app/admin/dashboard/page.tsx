@@ -41,9 +41,10 @@ export default function AdminDashboardPage() {
   useEffect(() => {
     async function load() {
       const token = localStorage.getItem("adminToken");
-      const headers: HeadersInit | undefined = token
-        ? { Authorization: `Bearer ${token}` }
-        : undefined;
+      const headers: HeadersInit = {};
+      if (token) {
+        headers["Authorization"] = `Bearer ${token}`;
+      }
 
       const [statsRes, bookingsRes, messagesRes] = await Promise.all([
         fetch(`${apiBase}/api/admin/stats`, { headers }),
